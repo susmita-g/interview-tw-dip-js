@@ -1,41 +1,45 @@
 const input1 = {
-  price: 28995,
-  mileage: "47000",
-  certified: "yes",
-  comments: "",
-  buyer: {
-    contactID: "A1234",
-    firstName: "John",
-    lastName: "Doe",
-    suffix: "SR",
-    isPerson: "Y"
-  }
-};
+    "price": 28995,
+    "mileage": "47000",
+    "certified": "yes",
+    "comments": "",
+    "buyer": {
+        "contactID": "A1234",
+        "firstName": "John",
+        "lastName": "Doe",
+        "suffix": "SR",
+        "isPerson": "Y"
+    }
+}
 
 
 const input2 = {
-  vehicle: {
-    specs: {
-      engine: "2.0L Turbo",
-      fuel: "Gasoline"
+  "vehicle": {
+    "specs": {
+      "engine": "2.0L Turbo",
+      "fuel": "Gasoline"
     },
-    features: [
+    "features": [
       { 
-        id: "feature1",
-        name: "Sunroof" 
+        "id": "feature1",
+        "name": "Sunroof" 
       },
       { 
-        id: "feature2",
-        name: "Leather Seats" 
+        "id": "feature2",
+        "name": "Leather Seats" 
       },
       { 
-        id: "feature3",
-        name: "Keyless Entry" 
+        "id": "feature3",
+        "name": null
+      },
+      { 
+        "id": "feature4",
+        "name": "Keyless Entry" 
       }
     ],
-    price: {
-      retail: "23000",
-      invoice: "21000"
+    "price": {
+      "retail": "23000",
+      "invoice": "21000"
     }
   }
 };

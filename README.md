@@ -12,11 +12,12 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 ---
 
 ### Folder Structure
-├── input.js            # Provided input object
-├── schema.js           # Avro schema for validation
-├── transform.js        # Write your transformation logic here
-├── transform.test.js   # Write test cases here
-├── index.js            # Entry point to run transformation and schema validation
+├── input.js                # Provided input object
+├── schema.js               # Avro schema for validation (Exercise 1)
+├── transform.js            # Write your transformation logic here (Exercise 1)
+├── test_transform.test.js  # Write test cases here
+├── flatten.js              # Write your flattening logic here (Exercise 2)
+├── index.js                # Entry point to run transformation and schema validation
 
 ---
 
@@ -24,13 +25,13 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 
 ### 📋 Objective
 
-Transform an input object to match a specific **Avro schema**. Your output will be validated against the schema.
+Transform input1 from **input.js** to match the schema in **schema.js**. Your output will be validated against the avro schema.
 
 ## ✅ Tasks
 - Read the input1 from `input.js`
 - Write transformation logic in `transform.js`
 - Output must match `schema.js`
-- Optional: Write test cases in `transform.test.js`
+- Write test cases in `test_transform.test.js`
 
 
 ---
@@ -45,9 +46,9 @@ Transform the given input object into the expected output as shown below.
 ## ✅ Tasks
 - Read the input2 from `input.js`
 - Write transformation logic in `flatten.js`
-- Optional: Write test cases in `flatten.test.js`
+- Write test cases in `test_flatten.test.js`
 
-## Expecte Output:
+## Expected Output:
 {
   engine: "2.0L Turbo",
   fuel: "Gasoline",
@@ -61,7 +62,7 @@ Transform the given input object into the expected output as shown below.
 
 ## Run the code
 ```bash
-npm install
+npm install       # Install dependecies
 npm run start     # Runs index.js and validates your output
 npm test          # Runs test cases (if any)
 

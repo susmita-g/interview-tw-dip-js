@@ -9,7 +9,7 @@ module.exports = {
         name: "Vehicle",
         fields: [
           {
-            name: "amount",
+            name: "price",
             type: ["null", "string"],
             default: null
           },
