@@ -1,12 +1,12 @@
 const avro = require("avsc");
 const schema = require("./schema");
-const input = require("./input");
+const { input1 } = require("./input");
 const transform = require("./transform");
 
 const type = avro.Type.forSchema(schema);
 
 // ===== TRANSFORM LOGIC STARTS HERE =====
-const transformed = transform(input);
+const transformed = transform(input1);
 
 
 
