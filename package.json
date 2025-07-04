@@ -1,0 +1,25 @@
+{
+  "name": "interview-tw-dip",
+  "version": "1.0.0",
+  "description": "Transform an input object to match a specific Avro schema. Your output must pass schema validation.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node transform.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susmita-g/interview-tw-dip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/susmita-g/interview-tw-dip/issues"
+  },
+  "homepage": "https://github.com/susmita-g/interview-tw-dip#readme",
+  "dependencies": {
+    "avsc": "^5.7.4"
+  }
+}

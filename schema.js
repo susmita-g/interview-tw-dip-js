@@ -1,0 +1,47 @@
+module.exports = {
+  type: "record",
+  name: "TransformedVehicleWrapper",
+  fields: [
+    {
+      name: "vehicle",
+      type: {
+        type: "record",
+        name: "Vehicle",
+        fields: [
+          {
+            name: "amount",
+            type: ["null", "string"],
+            default: null
+          },
+          {
+            name: "certified",
+            type: ["null", "boolean"],
+            default: null
+          },
+          {
+            name: "buyer",
+            type: {
+              type: "record",
+              name: "Buyer",
+              fields: [
+                {
+                  name: "contactID",
+                  type: ["null", "string"],
+                  default: null
+                },
+                {
+                  name: "fullName",
+                  type: "string"
+                },
+                {
+                  name: "isPerson",
+                  type: "boolean"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+};

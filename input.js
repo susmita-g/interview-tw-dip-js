@@ -1,0 +1,13 @@
+module.exports = {
+  price: 28995,
+  mileage: "47000",
+  certified: "yes",
+  comments: "",
+  buyer: {
+    contactID: "A1234",
+    firstName: "John",
+    lastName: "Doe",
+    suffix: "SR",
+    isPerson: "Y"
+  }
+};
