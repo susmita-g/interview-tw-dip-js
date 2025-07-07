@@ -25,6 +25,7 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 
 ### 📋 Objective
 
+Return data for totalPrice (price+fee), certified, contactID, fullName, isPerson
 Transform input1 from **input.js** to match the schema in **schema.js**. Your output will be validated against the avro schema.
 
 ## ✅ Tasks

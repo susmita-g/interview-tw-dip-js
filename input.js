@@ -1,5 +1,6 @@
 const input1 = {
     "price": 28995,
+    "fee": 1005,
     "mileage": "47000",
     "certified": "yes",
     "comments": "",
