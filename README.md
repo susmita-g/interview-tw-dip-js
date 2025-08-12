@@ -70,7 +70,7 @@ Process the provided vehicle dates to reformat them as per the requirements belo
 
 ## ✅ Tasks
 - Read the input3 from `input.js`
-- Convert all lastModifiedDate values from dd/mm/yyyy format to mm/dd/yyyy format.
+- Convert all `lastModifiedDate` values from `dd/MM/yyyy HH:mm:ss` to `MM/dd/yyyy HH:mm:ss`.
 - Return the current year dates with latest dates first.
 - Write transformation logic in `vehicleDates.js`
 
