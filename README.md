@@ -1,8 +1,9 @@
 # Data Transformation Exercises
-This repository contains **two exercises** designed to evaluate your ability to:
+This repository contains **four exercises** designed to evaluate your ability to:
 - Transform and validate JSON data against a schema
 - Extract and flatten fields from nested objects
-- Write clean, testable JavaScript code
+- Write clean JavaScript code
+- REST APIs
 
 ---
 
@@ -15,8 +16,9 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 ├── input.js                # Provided input object
 ├── schema.js               # Avro schema for validation (Exercise 1)
 ├── transform.js            # Write your transformation logic here (Exercise 1)
-├── test_transform.test.js  # Write test cases here
+├── test_transform.test.js  # Write test cases for Exercise 1 here
 ├── flatten.js              # Write your flattening logic here (Exercise 2)
+├── vehicleDates.js         # Write your flattening logic here (Exercise 3)
 ├── index.js                # Entry point to run transformation and schema validation
 
 ---
@@ -47,7 +49,6 @@ Transform the given input object into the expected output as shown below.
 ## ✅ Tasks
 - Read the input2 from `input.js`
 - Write transformation logic in `flatten.js`
-- Write test cases in `test_flatten.test.js`
 
 ## Expected Output:
 {
@@ -56,6 +57,34 @@ Transform the given input object into the expected output as shown below.
   features: "Sunroof|Leather Seats|Keyless Entry",
   retail_price: "23000"
 };
+
+
+---
+
+
+# Exercise 3: Filter and Sort Dates
+
+### 📋 Objective
+
+Process the provided vehicle dates to reformat them as per the requirements below.
+
+## ✅ Tasks
+- Read the input3 from `input.js`
+- Convert all lastModifiedDate values from dd/mm/yyyy format to mm/dd/yyyy format.
+- Return the current year dates with latest dates first.
+- Write transformation logic in `vehicleDates.js`
+
+## Expected Output:
+"vehicle": {
+    "dates": [
+        {
+            "lastModifiedDate": "30/12/2025 10:33:07"
+        },
+        {
+            "lastModifiedDate": "25/06/2025 20:12:00"
+        }
+    ]
+}
 
 
 ---

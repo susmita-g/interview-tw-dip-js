@@ -13,7 +13,6 @@ const input1 = {
     }
 }
 
-
 const input2 = {
   "vehicle": {
     "specs": {
@@ -46,5 +45,20 @@ const input2 = {
 };
 
 
+const input3 = {
+  "vehicle": {
+    "dates": [
+        {
+            "lastModifiedDate": "15/11/2024 15:08:25"
+        },
+        {
+            "lastModifiedDate": "25/06/2025 20:12:00"
+        },
+        {
+            "lastModifiedDate": "30/12/2025 10:33:07"
+        }
+    ]
+}
+}
 
-module.exports = { input1, input2 };
+module.exports = { input1, input2, input3 };
